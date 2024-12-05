@@ -1,3 +1,3 @@
 # NoMyth
-This is a website for technological news
+This is a website for technological news </br>
 Author - H shravani
