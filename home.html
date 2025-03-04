@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NoMyth - Tech Hub</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="headerFooter.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">NoMyth</a>
+      </div>
+      <ul class="menu">
+        <li>
+            <a href="home.html">
+                <span class="menu-icon fas fa-home"></span>
+                <span>Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="#categories" onclick="toggleCategories(event)" id="toggleCategoriesBtn">
+                <span class="menu-icon fas fa-th-large"></span>
+                <span>Categories</span>
+            </a>
+        </li>
+        <li>
+            <a href="hackathons.html">
+                <span class="menu-icon fas fa-tools"></span>
+                <span>Hackathons</span>
+            </a>
+        </li>
+        <li>
+            <a href="courses.html">
+                <span class="menu-icon fas fa-book"></span>
+                <span>Courses</span>
+            </a>
+        </li>
+    </ul>
+      <div class="main_box">
+        <input type="checkbox" id="check" />
+        <div class="btn_one">
+          <label for="check" >
+            <i class="fa-solid fa-bars"></i>
+          </label>
+        </div>
+  
+        <div class="sidebar_menu">
+          <div class="logo">
+            <a href="#">NoMyth</a>
+            <div class="btn_two">
+              <label for="check" style="color: rgb(254, 241, 241)">
+                <i class="fa-solid fa-xmark"></i>
+              </label>
+            </div>
+          </div>
+  
+   
+          <div class="sidebar_menu_items">
+            <ul>
+              <li>
+                <i class="fas fa-home"></i>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <i class="fas fa-th-large"></i>
+                <a href="#categories" onclick="sidebarToggleCategories(event)" id="sidebarToggleCategoriesBtn">Categories</a>
+              </li>
+              <li>
+                <i  class="fas fa-tools"></i>
+                <a href="hackathons.html">Hackathons</a>
+              </li>
+              <li>
+                <i class="fas fa-book"></i>
+                <a href="courses.html">Courses</a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <i class="fa-regular fa-comments"></i>
+                <a href="#">Feedback</a>
+              </li>
+            </ul>
+          </div>
+          <div class="socialMedia">
+            <ul>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>  
+    </nav>
+  </header>
+
+  <div class="categoriesPopup" id="categoriesPopup">
+    <ul>
+      <li>
+        <a href="ai.html" class="ai" >
+          <span>AI</span>
+        </a>
+      </li>
+      <li>
+        <a href="cloudComputing.html" class="cloudComputing">          
+          <span>Cloud Computing</span>
+        </a>
+      </li>
+      <li>
+        <a href="cyber.html" class="cyber" >
+          <span>Cyber Security</span>
+        </a>
+      </li>
+      <li>
+        <a href="blockchain.html" class="blockchain" >
+          <span>Blockchain</span>
+        </a>
+      </li>
+      <li>
+        <a href="iot.html" class="iot">          
+          <span>IoT</span>
+        </a>
+      </li>
+    <li>
+      <a href="miscellaneous.html" class="miscellaneous">          
+        <span>Miscellaneous</span>
+      </a>
+    </li>
+    
+    </ul>
+  </div>
+  
+  <div class="sidebarCategoriesPopup" id="sidebarCategoriesPopup">
+    <ul>
+      <li>
+        <a href="ai.html" class="ai" >
+          <span>AI</span>
+        </a>
+      </li>
+      <li>
+        <a href="cloudComputing.html" class="cloudComputing">          
+          <span>Cloud Computing</span>
+        </a>
+      </li>
+      <li>
+        <a href="cyber.html" class="cyber" >
+          <span>Cyber Security</span>
+        </a>
+      </li>
+      <li>
+        <a href="blockchain.html" class="blockchain" >
+          <span>Blockchain</span>
+        </a>
+      </li>
+      <li>
+        <a href="iot.html" class="iot">          
+          <span>IoT</span>
+        </a>
+      </li>
+    <li>
+      <a href="miscellaneous.html" class="miscellaneous">          
+        <span>Miscellaneous</span>
+      </a>
+    </li>
+    </ul>
+  </div>
+  
+  
+ 
+  
+  <div class="content">
+    <div class="heading">
+    <p class="headline">Stay Ahead in Tech with NoMyth</p>
+    <p class="subHeadline">Discover the latest tech news, events, and courses.</p>
+  </div>
+ 
+    <div class="content1"></div>
+    <div class="content2"></div>
+    <div class="content3"></div>
+    <div class="content4"></div>
+    <div class="content5"></div>
+    <div class="content6"></div>
+    <div class="content7"></div>
+    <div class="content8"></div>
+    <div class="content9"></div>
+    <div class="content10"></div>
+    <div class="content11"></div>
+    <div class="content12"></div>
+
+</div>
+<footer id="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">
+          <a href="#">NoMyth</a>
+        </div>
+        <p class="footer-description">Your go-to platform for tech news, hackathons, and trending courses.</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="hackathons.html">Hackathons</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          
+        </ul>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><a href="mailto:info@nomyth.com">info@nomyth.com</a></p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 NoMyth. All rights reserved.</p>
+    </div>
+  </footer>
+  
+
+  <script src="home.js"></script>
+</body>
+</html>
